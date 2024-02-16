@@ -1,3 +1,20 @@
+header{
+    background-color: aqua;
+}
+
+main{
+    background-color: aqua;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header"
+                            "nav main aside"
+                            "footer footer footer";
+}
+
 .part1 h2 {
     color : red;
 }
