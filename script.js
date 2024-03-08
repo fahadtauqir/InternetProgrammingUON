@@ -31,17 +31,26 @@ function moveToLeft() {
     element.style.left = positionleft - 10 + 'px';
 }
 
+function myKeyDown(event){
+    console.log(event.keyCode);
+        if(event.keyCode == 37){
+        var element = document.getElementById('circle');
+        var positionleft = element.offsetLeft
+        element.style.left = parseInt(positionleft) - 10 + 'px'
+        }
+}
+
+
 function myloadfun() {
     var circle = document.getElementById('circle');
     circle.addEventListener('click', moveToLeft);
+}999
+
+function myLoadevent(){
+    document.addEventListener('keydown', myKeyDown);
 }
 
-function myKeyDown(event){
-    console.log(event.keyCode);
-}
+document.addEventListener('DOMContentLoaded', myLoadevent)
+document.addEventListener('DOMContentLoaded', myloadfun)
 
-
-
-document.addEventListener('DOMContentLoaded', myloadfun);
-document.addEventListener('keydown', myKeyDown);
 
