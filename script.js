@@ -23,34 +23,38 @@ function myloadfun() {
 }
 */
 
-function moveToLeft() {
-    var element = document.getElementById('circle');
-    // Ensure the element's position is set to relative to enable movement.
-   var positionleft = element.offsetLeft
-    // Move the element to the left by 10px.
-    element.style.left = positionleft - 10 + 'px';
-}
+// function moveToLeft() {
+//     var element = document.getElementById('circle');
+//     // Ensure the element's position is set to relative to enable movement.
+//    var positionleft = element.offsetLeft
+//     // Move the element to the left by 10px.
+//     element.style.left = positionleft - 10 + 'px';
+// }
 
-function myKeyDown(event){
-    console.log(event.keyCode);
-        if(event.keyCode == 37){
-        var element = document.getElementById('circle');
-        var positionleft = element.offsetLeft
-        element.style.left = parseInt(positionleft) - 10 + 'px'
-        }
-}
+// function myKeyDown(event){
+//     console.log(event.keyCode);
+//         if(event.keyCode == 37){
+//         var element = document.getElementById('circle');
+//         var positionleft = element.offsetLeft
+//         element.style.left = parseInt(positionleft) - 10 + 'px'
+//         }
+// }
 
 
-function myloadfun() {
-    var circle = document.getElementById('circle');
-    circle.addEventListener('click', moveToLeft);
-}999
+// function myloadfun() {
+//     var circle = document.getElementById('circle');
+//     circle.addEventListener('click', moveToLeft);
+// }999
 
-function myLoadevent(){
-    document.addEventListener('keydown', myKeyDown);
-}
+// function myLoadevent(){
+//     document.addEventListener('keydown', myKeyDown);
+// }
 
-document.addEventListener('DOMContentLoaded', myLoadevent)
-document.addEventListener('DOMContentLoaded', myloadfun)
+// document.addEventListener('DOMContentLoaded', myLoadevent)
+// document.addEventListener('DOMContentLoaded', myloadfun)
+
+
+
+
 
 
